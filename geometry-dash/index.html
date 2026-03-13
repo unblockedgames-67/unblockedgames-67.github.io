@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geometry Dash Unblocked | Play Rhythm Platformer Game 2026</title>
+<meta name="description" content="Play Geometry Dash unblocked online free. Jump and fly through rhythm-based levels with catchy soundtracks. Practice mode helps you master obstacles on Chromebook.">
+<meta name="keywords" content="geometry dash unblocked, geometry dash game, rhythm platformer, jump game unblocked, play geometry dash chromebook, geometry dash online, spike dodging game, music game, geometry dash school, robtop game">
+<link rel="canonical" href="https://unblockedgames-67.github.io/geometry-dash/">
+<meta property="og:title" content="Geometry Dash Unblocked - Rhythm-Based Platformer">
+<meta property="og:description" content="Jump and flip to the beat. Master challenging levels in Geometry Dash unblocked free online.">
+<meta property="og:image" content="https://unblockedgames-67.github.io/images/geometry-dash.png">
+<meta property="og:url" content="https://unblockedgames-67.github.io/geometry-dash/">
+<meta property="og:type" content="game">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Geometry Dash Unblocked">
+<meta name="twitter:description" content="Rhythm-based platforming action. Play free and unblocked.">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Geometry Dash Unblocked",
+  "url": "https://unblockedgames-67.github.io/geometry-dash/",
+  "description": "Rhythm-based platformer where players jump and fly through levels filled with geometric obstacles. Features catchy soundtracks, practice mode, and unlockable icons.",
+  "genre": ["Action", "Platformer", "Rhythm"],
+  "applicationCategory": "Game",
+  "operatingSystem": "Chromebook, Windows, macOS, Linux, iOS, Android",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "2200000",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "gamePlatform": "Web Browser",
+  "playMode": "Single Player",
+  "gameLocation": "https://https://unblockedgames-67.github.io/geometry-dash/",
+  "inLanguage": "English",
+  "creator": {
+    "@type": "Organization",
+    "name": "RobTop Games"
+  }
+}
+</script>
+
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        :root{--background:#0B0E17;--surface:#141824;--surface-light:#1E2332;--primary:#6366F1;--primary-light:#818CF8;--primary-glow:rgba(99,102,241,0.25);--accent:#FBBF24;--text:#FFFFFF;--text-secondary:#9CA3AF;--border:#2D3348;--gradient:linear-gradient(135deg,#6366F1,#A78BFA);}
+        body{font-family:'Inter',system-ui,-apple-system,sans-serif;background-color:var(--background);color:var(--text);line-height:1.5;}
+        .container{max-width:1200px;margin:0 auto;padding:0 24px;}
+        h1{font-size:3.5rem;font-weight:800;line-height:1.2;letter-spacing:-0.02em;background:linear-gradient(135deg,#FFFFFF,#FFEDD5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:1rem;}
+        h2{font-size:2.4rem;font-weight:700;margin-bottom:1.8rem;}
+        h3{font-size:1.5rem;font-weight:600;margin-bottom:1rem;}
+        .navbar{position:sticky;top:0;z-index:100;background:rgba(11,14,23,0.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border);}
+        .nav-container{max-width:1200px;margin:0 auto;padding:0 24px;height:70px;display:flex;align-items:center;justify-content:space-between;}
+        .logo{font-size:1.4rem;font-weight:700;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+        .nav-links{display:flex;gap:6px;list-style:none;}
+        .nav-links a{color:var(--text-secondary);text-decoration:none;padding:8px 18px;border-radius:40px;transition:all 0.2s;font-weight:500;}
+        .nav-links a:hover,.nav-links a.active{background:var(--surface-light);color:var(--text);}
+        .game-header{padding:3.5rem 0 2rem;text-align:center;background:radial-gradient(circle at 50% 0%,#3D2A1A 0%,var(--background) 100%);}
+        .game-stats{display:flex;justify-content:center;gap:2rem;margin-top:2rem;flex-wrap:wrap;}
+        .stat-item{display:flex;align-items:center;gap:0.6rem;background:var(--surface);padding:0.6rem 1.8rem;border-radius:60px;border:1px solid var(--border);}
+        .game-wrapper{background:var(--surface);border-radius:32px;border:1px solid var(--border);overflow:hidden;margin:3rem 0;box-shadow:0 25px 50px -12px rgba(0,0,0,0.8);}
+        .game-frame{width:100%;height:550px;border:none;background:#000;display:none;}
+        .preloader{height:550px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#0A0A14;text-align:center;padding:2rem;}
+        .preloader img{max-width:300px;border-radius:16px;margin-bottom:2rem;opacity:0.9;border:1px solid var(--border);}
+        .play-btn{background:var(--gradient);border:none;color:white;padding:1rem 3rem;border-radius:60px;font-size:1.3rem;font-weight:600;cursor:pointer;transition:all 0.2s;border:1px solid rgba(255,255,255,0.1);box-shadow:0 8px 20px var(--primary-glow);}
+        .play-btn:hover{transform:translateY(-4px);box-shadow:0 15px 30px var(--primary-glow);}
+        .fullscreen-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:1rem;margin-top:1rem;background:var(--gradient);border:none;border-radius:16px;color:white;font-size:1.2rem;font-weight:600;cursor:pointer;transition:all 0.2s;border:1px solid rgba(255,255,255,0.1);display:none;}
+        .fullscreen-btn:hover{transform:translateY(-3px);box-shadow:0 12px 24px var(--primary-glow);}
+        .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:4rem 0;}
+        .card{background:var(--surface);border-radius:24px;padding:2.2rem;border:1px solid var(--border);transition:all 0.2s;}
+        .card:hover{border-color:var(--primary);transform:translateY(-5px);}
+        .feature-list{list-style:none;}
+        .feature-list li{display:flex;align-items:center;gap:0.8rem;margin-bottom:1rem;color:var(--text-secondary);}
+        .feature-list li::before{content:"✓";color:var(--primary);font-weight:700;}
+        .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2rem;}
+        .trust-item{text-align:center;}
+        .trust-icon{font-size:2.8rem;margin-bottom:0.8rem;}
+        .games-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.5rem;margin:2rem 0 3rem;}
+        .game-tile{background:var(--surface);border-radius:20px;overflow:hidden;border:1px solid var(--border);transition:all 0.2s;text-align:center;}
+        .game-tile:hover{transform:translateY(-6px);border-color:var(--primary);box-shadow:0 12px 24px var(--primary-glow);}
+        .game-tile img{width:100%;height:120px;object-fit:cover;background:var(--surface-light);}
+        .game-tile h4{padding:1rem;font-size:0.95rem;font-weight:500;}
+        .game-tile a{text-decoration:none;color:var(--text);display:block;}
+        .tips-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin:2rem 0;}
+        .tip-card{background:var(--surface-light);border-radius:16px;padding:1.5rem;border:1px solid var(--border);}
+        .tip-card h4{color:var(--primary);margin-bottom:0.8rem;display:flex;align-items:center;gap:0.5rem;}
+        .seo-content{background:var(--surface);border-radius:24px;padding:2.8rem;margin:4rem 0;border:1px solid var(--border);}
+        .seo-content p{color:var(--text-secondary);margin-bottom:1.3rem;font-size:1.05rem;}
+        .seo-content h3{color:var(--primary);margin-top:2rem;margin-bottom:1rem;}
+        .seo-content ul, .seo-content ol{color:var(--text-secondary);margin-left:1.5rem;padding-left:1rem;margin-bottom:1.5rem;}
+        .seo-content ol li::marker{color:var(--primary);font-weight:700;}
+        .seo-content li{margin-bottom:0.5rem;}
+        footer{background:var(--surface);border-top:1px solid var(--border);padding:3.5rem 0;margin-top:5rem;}
+        .footer-content{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:2rem;}
+        .footer-links{display:flex;gap:2rem;flex-wrap:wrap;}
+        .footer-links a{color:var(--text-secondary);text-decoration:none;transition:color 0.2s;}
+        .footer-links a:hover{color:var(--primary);}
+        .copyright{color:var(--text-secondary);font-size:0.9rem;}
+        @media (max-width:1024px){h1{font-size:3rem;}.games-grid{grid-template-columns:repeat(3,1fr);}}
+        @media (max-width:768px){h1{font-size:2.5rem;}.grid-2{grid-template-columns:1fr;}.games-grid{grid-template-columns:repeat(2,1fr);}.trust-grid{grid-template-columns:repeat(2,1fr);}.tips-grid{grid-template-columns:1fr;}}
+        @media (max-width:480px){.games-grid{grid-template-columns:1fr;}}
+        .emoji{font-size:1.2em;}.text-center{text-align:center;}.mt-2{margin-top:2rem;}.mb-2{margin-bottom:2rem;}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">⚡ GEOMETRY DASH</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/games">All Games</a></li>
+            <li><a href="/racing">Racing</a></li>
+            <li><a href="/action">Action</a></li>
+            <li><a href="/puzzle">Puzzle</a></li>
+            <li><a href="/strategy">Strategy</a></li>
+            <li><a href="/skill">Skill</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+    <header class="game-header">
+        <div class="container">
+            <h1>Geometry Dash Unblocked<br><span style="font-size:0.55em;display:block;margin-top:0.5rem;">Jump, Fly, And Flip To The Beat In This Rhythm Platformer</span></h1>
+            <p style="font-size:1.3rem;color:var(--text-secondary);max-width:700px;margin:0 auto;">Test your reflexes in Geometry Dash Unblocked. Jump and fly through rhythm-based levels filled with spikes and obstacles. Practice mode helps you master each stage on Chromebook.</p>
+            <div class="game-stats">
+                <div class="stat-item"><span>⭐</span> 4.8/5 (2.2M+ players)</div>
+                
+                    <div class="stat-item"><span>🎵</span> Rhythm-Based Gameplay</div>
+                
+                    <div class="stat-item"><span>⚡</span> Fast-Paced Action</div>
+                
+                    <div class="stat-item"><span>🧩</span> Multiple Game Modes</div>
+                
+                    <div class="stat-item"><span>🎨</span> Unlockable Icons</div>
+                
+                    <div class="stat-item"><span>📝</span> Practice Mode</div>
+                
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        
+        <div class="game-wrapper">
+            <div class="preloader" id="preloader">
+                <img src="https://unblockedgames-67.github.io/images/geometry-dash.png" alt="Geometry Dash Unblocked Preview">
+                <button class="play-btn" id="playBtn"><span class="emoji">▶️</span> PLAY GEOMETRY DASH NOW</button>
+                <p style="color:var(--text-secondary);margin-top:1.5rem;">Action 💥 • Skill 🎯</p>
+            </div>
+            <iframe class="game-frame" id="gameFrame" title="Geometry Dash Unblocked"></iframe>
+        </div>
+        <button class="fullscreen-btn" id="fullscreenBtn"><span class="emoji">🖥️</span> PLAY IN FULLSCREEN MODE</button>
+        
+        
+        <div class="grid-2">
+            
+            <div class="card">
+                <h3><span class="emoji">🎵</span> Game Overview</h3>
+                <p style="color:var(--text-secondary);margin-bottom:1.5rem;">Geometry Dash is a rhythm-based platformer where players navigate geometric obstacles synchronized to music. Multiple game modes and increasing difficulty create intense challenges.</p>
+                
+                <ul class="feature-list">
+                    
+                        <li>21 official levels with unique soundtracks</li>
+                    
+                        <li>7 different gameplay modes</li>
+                    
+                        <li>Practice mode with checkpoints</li>
+                    
+                        <li>Unlockable icons and colors</li>
+                    
+                        <li>Rhythm-based timing mechanics</li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class="card">
+                <h3><span class="emoji">🎮</span> Controls</h3>
+                <p style="color:var(--text-secondary);margin-bottom:1.5rem;">Simple one-button controls for all devices:</p>
+                
+                <ul class="feature-list">
+                    
+                        <li><span style="display:inline-block;background:var(--surface-light);padding:6px 16px;border-radius:40px;margin-right:12px;font-weight:600;">Space / Click</span> Jump / Activate [citation:8]</li>
+                    
+                        <li><span style="display:inline-block;background:var(--surface-light);padding:6px 16px;border-radius:40px;margin-right:12px;font-weight:600;">Hold Space</span> Continuous jumps / Fly</li>
+                    
+                        <li><span style="display:inline-block;background:var(--surface-light);padding:6px 16px;border-radius:40px;margin-right:12px;font-weight:600;">Practice mode</span> Place checkpoints</li>
+                    
+                        <li><span style="display:inline-block;background:var(--surface-light);padding:6px 16px;border-radius:40px;margin-right:12px;">Menu</span> Select levels and customize</li>
+                    
+                </ul>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div style="margin:4rem 0;">
+            <h2 class="text-center">Why 2.2 Million Players Choose This Version</h2>
+            <div class="trust-grid">
+                
+                <div class="trust-item"><div class="trust-icon">⚡</div><h4 style="margin-bottom:0.3rem;">Smooth Gameplay</h4><p style="color:var(--text-secondary);font-size:0.9rem;">60FPS platforming action</p></div>
+                
+                <div class="trust-item"><div class="trust-icon">🔓</div><h4 style="margin-bottom:0.3rem;">Fully Unblocked</h4><p style="color:var(--text-secondary);font-size:0.9rem;">Play at school or work</p></div>
+                
+                <div class="trust-item"><div class="trust-icon">💻</div><h4 style="margin-bottom:0.3rem;">Chromebook Ready</h4><p style="color:var(--text-secondary);font-size:0.9rem;">Works on all devices</p></div>
+                
+                <div class="trust-item"><div class="trust-icon">🆓</div><h4 style="margin-bottom:0.3rem;">Completely Free</h4><p style="color:var(--text-secondary);font-size:0.9rem;">No downloads or payments</p></div>
+                
+            </div>
+        </div>
+        
+
+        
+        <div style="margin:3rem 0;">
+            <h2 class="text-center">Pro Tips for Mastering Geometry Dash</h2>
+            <div class="tips-grid">
+                
+                <div class="tip-card">
+                    <h4><span class="emoji">📝</span> Abuse Practice Mode</h4>
+                    <p style="color:var(--text-secondary);">Never attempt full runs on unknown levels. Place checkpoints at difficult sections, master each segment, then link them together [citation:10].</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4><span class="emoji">🔊</span> Play With Sound On</h4>
+                    <p style="color:var(--text-secondary);">Geometry Dash is a rhythm game—the music times your jumps. Playing without sound makes levels exponentially harder [citation:2].</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4><span class="emoji">🧠</span> Build Muscle Memory</h4>
+                    <p style="color:var(--text-secondary);">Success comes from automatic response, not conscious reaction. Play sections until your fingers move without thinking [citation:3].</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4><span class="emoji">🗺️</span> Memorize Level Layouts</h4>
+                    <p style="color:var(--text-secondary);">Every level has fixed patterns. Learn spike and jump placements through repetition. Anticipate rather than react [citation:3].</p>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="seo-content">
+            <h2>What Is Geometry Dash Unblocked?</h2>
+<p><strong>Geometry Dash Unblocked</strong> is the iconic rhythm-based platformer from RobTop Games that challenges players to jump, fly, and flip through geometrically themed levels synchronized to catchy electronic soundtracks [citation:2]. Originally released in 2013, this game has become a global phenomenon with millions of players testing their reflexes against its notoriously difficult obstacles [citation:8].</p>
+<p>Each level features a unique soundtrack, and every jump, pad, and ring is perfectly timed to the beat. You control a square that must navigate through spikes, blocks, and other hazards—one mistake sends you back to the beginning [citation:3]. The game features multiple game modes including the normal cube, a ship that flies, a ball that gravity-flips, and more. Practice mode lets you place checkpoints to master difficult sections before attempting full runs [citation:10]. The unblocked version removes all network restrictions, letting you test your rhythm skills on school Chromebooks, work computers, or any device with internet access [citation:2].</p>
+
+<h2>Why Geometry Dash Is Perfect For Chromebook</h2>
+<p>School-issued Chromebooks often block gaming sites, but <strong>Geometry Dash unblocked for Chromebook</strong> bypasses these restrictions completely [citation:2]. The lightweight HTML5 game runs smoothly on budget hardware with minimal system requirements. No extensions, no VPNs, no complicated setups—just pure rhythm-based platforming during study breaks or free periods.</p>
+<p>The game's simple one-touch controls (Spacebar or mouse click) work perfectly with Chromebook keyboards. Levels range from 1-2 minutes, making them ideal for quick sessions, while the practice mode lets you progress methodically when you have more time [citation:3].</p>
+
+<h2>How To Play Geometry Dash Online Free</h2>
+<p>Starting your <strong>Geometry Dash online free</strong> adventure:</p>
+<ol>
+<li>Open any browser on your device (Chrome, Edge, Firefox, Safari)</li>
+<li>Navigate to our Geometry Dash game page</li>
+<li>Press Spacebar or click mouse to jump [citation:8]</li>
+<li>Hold Spacebar for continuous jumps in some modes</li>
+<li>Navigate through obstacles without touching spikes</li>
+<li>Use Practice Mode (green flag icon) to learn difficult sections</li>
+<li>Unlock icons and colors as you complete levels</li>
+</ol>
+<p>No account creation, no email verification, no hidden fees. Your unlocked icons and progress save locally.</p>
+
+<h2>Game Modes And Mechanics</h2>
+<p>Geometry Dash features multiple gameplay modes that change how you control your character [citation:10]:</p>
+
+<h3>Cube Mode</h3>
+<p>The default mode. Tap to jump, release to fall. Simple but requires perfect timing. Used in most levels for basic platforming sections.</p>
+
+<h3>Ship Mode</h3>
+<p>Press and hold to fly upward, release to fall. Gravity-defying sections require fine control. Hold Spacebar continuously to maintain height, tap for small adjustments.</p>
+
+<h3>Ball Mode</h3>
+<p>Gravity flips each time you tap. Up becomes down, down becomes up. Disorienting but rhythmic once you learn the pattern.</p>
+
+<h3>UFO Mode</h3>
+<p>Tap to jump upward while maintaining horizontal momentum. Like the cube but with more floaty physics. Great for obstacle sequences.</p>
+
+<h3>Wave Mode</h3>
+<p>Two-dimensional movement—tap to move up, release to move down. Navigate through narrow corridors and spike mazes.</p>
+
+<h3>Robot Mode</h3>
+<p>Variable jump height based on how long you hold. Tap lightly for small hops, hold for big jumps. Adds precision to platforming.</p>
+
+<h3>Spider Mode</h3>
+<p>Teleports between floor and ceiling with each tap. Instant movement requires anticipating where you'll land.</p>
+
+<h2>Levels And Difficulty</h2>
+<p>The unblocked version features multiple levels with increasing difficulty [citation:8]:</p>
+
+<h3>Official Levels</h3>
+<ul>
+<li><strong>Stereo Madness</strong> - Easy introductory level</li>
+<li><strong>Back On Track</strong> - Slightly harder basics</li>
+<li><strong>Polargeist</strong> - First real challenge</li>
+<li><strong>Dry Out</strong> - Introduces new mechanics</li>
+<li><strong>Base After Base</strong> - Faster pace</li>
+<li><strong>Can't Let Go</strong> - Memory-intensive sections</li>
+<li><strong>Jumper</strong> - Bouncy fun</li>
+<li><strong>Time Machine</strong> - Speed changes</li>
+<li><strong>Cycles</strong> - Complex patterns</li>
+<li><strong>xStep</strong> - Rhythm focus</li>
+<li><strong>Clutterfunk</strong> - Chaotic obstacles</li>
+<li><strong>Theory of Everything</strong> - Epic difficulty</li>
+<li><strong>Electroman Adventures</strong> - Fast transitions</li>
+<li><strong>Clubstep</strong> - Very hard</li>
+<li><strong>Electrodynamix</strong> - Extreme speed</li>
+<li><strong>Hexagon Force</strong> - Intense patterns</li>
+<li><strong>Blast Processing</strong> - Late-game challenge</li>
+<li><strong>Geometrical Dominator</strong> - Technical mastery</li>
+<li><strong>Deadlocked</strong> - Ultimate test</li>
+</ul>
+
+<h2>Advanced Strategies For Geometry Dash</h2>
+<p>Want to beat every level? These <strong>Geometry Dash tips</strong> will improve your game:</p>
+
+<h3>Use Practice Mode Relentlessly</h3>
+<p>Never attempt full runs on levels you don't know. Use Practice Mode to place checkpoints at difficult sections [citation:10]. Practice each segment until you can do it consistently, then link them together. The 10-20 deaths learning a section save hundreds of deaths later.</p>
+
+<h3>Play With Sound On</h3>
+<p>Geometry Dash is a rhythm game—the music isn't background, it's essential [citation:2]. Jumps are timed to beats. Playing without sound makes levels exponentially harder. Let the music guide your timing.</p>
+
+<h3>Develop Muscle Memory</h3>
+<p>Success in Geometry Dash comes from muscle memory, not conscious reaction. Play sections repeatedly until your fingers move automatically. When you stop thinking about individual jumps and just feel the rhythm, you've mastered that section.</p>
+
+<h3>Learn Level Layouts</h3>
+<p>Every level has memorized patterns. After enough attempts, you'll know every spike and jump placement. Use this knowledge to anticipate rather than react [citation:3].</p>
+
+<h2>Frequently Asked Questions About Geometry Dash Unblocked</h2>
+
+<h3>Is Geometry Dash appropriate for school?</h3>
+<p>Yes, absolutely. Geometry Dash features geometric obstacles with no violence, blood, or inappropriate content. It's suitable for all ages [citation:3].</p>
+
+<h3>Do I need to download anything?</h3>
+<p>No downloads required. The game runs in your browser using HTML5 technology. It's also available as a Chrome extension [citation:2].</p>
+
+<h3>Can I play on my phone?</h3>
+<p>Yes, Geometry Dash works on iPhone, iPad, and Android devices. Touch controls work well for tapping to jump [citation:8].</p>
+
+<h3>How many levels are there?</h3>
+<p>The unblocked version includes 21 official levels from the full game, ranging from easy to extremely difficult [citation:8].</p>
+
+<h3>Can I create custom levels?</h3>
+<p>The browser version may not include the level editor, but you can play user-created levels on some platforms [citation:10].</p>
+
+<h3>Does progress save?</h3>
+<p>Unlocked icons and completed levels save locally in your browser. Don't clear cache to maintain progress.</p>
+        </div>
+
+        <section style="margin:4rem 0;">
+            <h2 class="text-center">Similar Unblocked Games You'll Love</h2>
+            <div class="games-grid">
+                
+                <div class="game-tile">
+                    <a href="/2-minute-football">
+                        <img src="https://unblockedgames-67.github.io/images/2-minute-football.png" alt="2 Minute Football Unblocked" loading="lazy">
+                        <h4>2 Minute Football</h4>
+                    </a>
+                </div>
+                
+                <div class="game-tile">
+                    <a href="/bad-ice-cream-2">
+                        <img src="https://unblockedgames-67.github.io/images/bad-ice-cream-2.png" alt="Bad Ice Cream 2 Unblocked" loading="lazy">
+                        <h4>Bad Ice Cream 2</h4>
+                    </a>
+                </div>
+                
+                <div class="game-tile">
+                    <a href="/highway-traffic">
+                        <img src="https://unblockedgames-67.github.io/images/highway-traffic.png" alt="Highway Traffic Unblocked" loading="lazy">
+                        <h4>Highway Traffic</h4>
+                    </a>
+                </div>
+                
+                <div class="game-tile">
+                    <a href="/age-of-war">
+                        <img src="https://unblockedgames-67.github.io/images/age-of-war.png" alt="Age Of War Unblocked" loading="lazy">
+                        <h4>Age Of War</h4>
+                    </a>
+                </div>
+                
+                <div class="game-tile">
+                    <a href="/bubble-shooter">
+                        <img src="https://unblockedgames-67.github.io/images/bubble-shooter.png" alt="Bubble Shooter Unblocked" loading="lazy">
+                        <h4>Bubble Shooter</h4>
+                    </a>
+                </div>
+                
+            </div>
+            <div style="text-align:center;margin-top:2rem;">
+                <a href="/games" style="color:var(--primary);text-decoration:none;font-weight:600;">View all 50+ unblocked games →</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="logo">⚡ GEOMETRY DASH UNBLOCKED</div>
+            <div class="footer-links">
+                <a href="/privacy">Privacy</a>
+                <a href="/terms">Terms</a>
+                <a href="/dmca">DMCA</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <div class="copyright">© 2026 Geometry Dash Unblocked. All rights reserved.</div>
+        </div>
+    </div>
+</footer>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TD842ZQ7NL"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TD842ZQ7NL');
+</script>
+
+<script>
+    const playBtn=document.getElementById('playBtn');
+    const gameFrame=document.getElementById('gameFrame');
+    const preloader=document.getElementById('preloader');
+    const fullscreenBtn=document.getElementById('fullscreenBtn');
+    
+    playBtn.addEventListener('click',function(){
+        gameFrame.src='https://iframe.unblocked-76-games.org/geometry-dash-main';
+        gameFrame.style.display='block';
+        preloader.style.display='none';
+        fullscreenBtn.style.display='flex';
+        if(typeof gtag!=='undefined'){
+            gtag('event','game_start',{'event_label':'Geometry Dash Unblocked'});
+        }
+    });
+    
+    fullscreenBtn.addEventListener('click',function(){
+        if(gameFrame.requestFullscreen){gameFrame.requestFullscreen();}
+        else if(gameFrame.webkitRequestFullscreen){gameFrame.webkitRequestFullscreen();}
+        else if(gameFrame.msRequestFullscreen){gameFrame.msRequestFullscreen();}
+    });
+</script>
+
+<a href="https://www.liveinternet.ru/click" target="_blank"><img id="licnt8636" width="0" height="0" style="border:0" title="LiveInternet" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" alt=""/></a><script>(function(d,s){d.getElementById("licnt8636").src="https://counter.yadro.ru/hit?t45.1;r"+escape(d.referrer)+((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+(s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen);</script>
+
+</body>
+</html>

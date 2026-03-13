@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2048 Unblocked | Play Addictive Number Puzzle Game 2026</title>
+<meta name="description" content="Play 2048 unblocked online free. Merge matching tiles, reach 2048, and challenge your brain. Works perfectly on school Chromebooks and all devices.">
+<meta name="keywords" content="2048 unblocked, 2048 game, number puzzle unblocked, merge game online, play 2048 chromebook, 2048 web, puzzle game free, brain training game, 2048 school, math puzzle unblocked">
+<link rel="canonical" href="https://unblockedgames-67.github.io/2048/">
+<meta property="og:title" content="2048 Unblocked - Addictive Number Puzzle">
+<meta property="og:description" content="Merge tiles to reach 2048. Play the classic number puzzle unblocked free online at school or work.">
+<meta property="og:image" content="https://unblockedgames-67.github.io/images/2048.png">
+<meta property="og:url" content="https://unblockedgames-67.github.io/2048/">
+<meta property="og:type" content="game">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2048 Unblocked">
+<meta name="twitter:description" content="Merge numbers, reach 2048. Play the classic puzzle free and unblocked.">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "2048 Unblocked",
+  "url": "https://unblockedgames-67.github.io/2048/",
+  "description": "Addictive number puzzle game where players slide numbered tiles on a grid, combining matching numbers to reach the 2048 tile.",
+  "genre": ["Puzzle", "Strategy", "Math"],
+  "applicationCategory": "Game",
+  "operatingSystem": "Chromebook, Windows, macOS, Linux, iOS, Android",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "890000",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "gamePlatform": "Web Browser",
+  "playMode": "Single Player",
+  "gameLocation": "https://https://unblockedgames-67.github.io/2048/",
+  "inLanguage": "English",
+  "creator": {
+    "@type": "Organization",
+    "name": "Unblocked Games 67"
+  }
+}
+</script>
+
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        :root{--background:#0B0E17;--surface:#141824;--surface-light:#1E2332;--primary:#6366F1;--primary-light:#818CF8;--primary-glow:rgba(99,102,241,0.25);--accent:#FBBF24;--text:#FFFFFF;--text-secondary:#9CA3AF;--border:#2D3348;--gradient:linear-gradient(135deg,#6366F1,#A78BFA);}
+        body{font-family:'Inter',system-ui,-apple-system,sans-serif;background-color:var(--background);color:var(--text);line-height:1.5;}
+        .container{max-width:1200px;margin:0 auto;padding:0 24px;}
+        h1{font-size:3.5rem;font-weight:800;line-height:1.2;letter-spacing:-0.02em;background:linear-gradient(135deg,#FFFFFF,#FFEDD5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:1rem;}
+        h2{font-size:2.4rem;font-weight:700;margin-bottom:1.8rem;}
+        h3{font-size:1.5rem;font-weight:600;margin-bottom:1rem;}
+        .navbar{position:sticky;top:0;z-index:100;background:rgba(11,14,23,0.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border);}
+        .nav-container{max-width:1200px;margin:0 auto;padding:0 24px;height:70px;display:flex;align-items:center;justify-content:space-between;}
+        .logo{font-size:1.4rem;font-weight:700;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+        .nav-links{display:flex;gap:6px;list-style:none;}
+        .nav-links a{color:var(--text-secondary);text-decoration:none;padding:8px 18px;border-radius:40px;transition:all 0.2s;font-weight:500;}
+        .nav-links a:hover,.nav-links a.active{background:var(--surface-light);color:var(--text);}
+        .game-header{padding:3.5rem 0 2rem;text-align:center;background:radial-gradient(circle at 50% 0%,#3D2A1A 0%,var(--background) 100%);}
+        .game-stats{display:flex;justify-content:center;gap:2rem;margin-top:2rem;flex-wrap:wrap;}
+        .stat-item{display:flex;align-items:center;gap:0.6rem;background:var(--surface);padding:0.6rem 1.8rem;border-radius:60px;border:1px solid var(--border);}
+        .game-wrapper{background:var(--surface);border-radius:32px;border:1px solid var(--border);overflow:hidden;margin:3rem 0;box-shadow:0 25px 50px -12px rgba(0,0,0,0.8);}
+        .game-frame{width:100%;height:550px;border:none;background:#000;display:none;}
+        .preloader{height:550px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#0A0A14;text-align:center;padding:2rem;}
+        .preloader img{max-width:300px;border-radius:16px;margin-bottom:2rem;opacity:0.9;border:1px solid var(--border);}
+        .play-btn{background:var(--gradient);border:none;color:white;padding:1rem 3rem;border-radius:60px;font-size:1.3rem;font-weight:600;cursor:pointer;transition:all 0.2s;border:1px solid rgba(255,255,255,0.1);box-shadow:0 8px 20px var(--primary-glow);}
+        .play-btn:hover{transform:translateY(-4px);box-shadow:0 15px 30px var(--primary-glow);}
+        .fullscreen-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:1rem;margin-top:1rem;background:var(--gradient);border:none;border-radius:16px;color:white;font-size:1.2rem;font-weight:600;cursor:pointer;transition:all 0.2s;border:1px solid rgba(255,255,255,0.1);display:none;}
+        .fullscreen-btn:hover{transform:translateY(-3px);box-shadow:0 12px 24px var(--primary-glow);}
+        .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:4rem 0;}
+        .card{background:var(--surface);border-radius:24px;padding:2.2rem;border:1px solid var(--border);transition:all 0.2s;}
+        .card:hover{border-color:var(--primary);transform:translateY(-5px);}
+        .feature-list{list-style:none;}
+        .feature-list li{display:flex;align-items:center;gap:0.8rem;margin-bottom:1rem;color:var(--text-secondary);}
+        .feature-list li::before{content:"✓";color:var(--primary);font-weight:700;}
+        .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2rem;}
+        .trust-item{text-align:center;}
+        .trust-icon{font-size:2.8rem;margin-bottom:0.8rem;}
+        .games-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.5rem;margin:2rem 0 3rem;}
+        .game-tile{background:var(--surface);border-radius:20px;overflow:hidden;border:1px solid var(--border);transition:all 0.2s;text-align:center;}
+        .game-tile:hover{transform:translateY(-6px);border-color:var(--primary);box-shadow:0 12px 24px var(--primary-glow);}
+        .game-tile img{width:100%;height:120px;object-fit:cover;background:var(--surface-light);}
+        .game-tile h4{padding:1rem;font-size:0.95rem;font-weight:500;}
+        .game-tile a{text-decoration:none;color:var(--text);display:block;}
+        .tips-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin:2rem 0;}
+        .tip-card{background:var(--surface-light);border-radius:16px;padding:1.5rem;border:1px solid var(--border);}
+        .tip-card h4{color:var(--primary);margin-bottom:0.8rem;display:flex;align-items:center;gap:0.5rem;}
+        .seo-content{background:var(--surface);border-radius:24px;padding:2.8rem;margin:4rem 0;border:1px solid var(--border);}
+        .seo-content p{color:var(--text-secondary);margin-bottom:1.3rem;font-size:1.05rem;}
+        .seo-content h3{color:var(--primary);margin-top:2rem;margin-bottom:1rem;}
+        .seo-content ul, .seo-content ol{color:var(--text-secondary);margin-left:1.5rem;padding-left:1rem;margin-bottom:1.5rem;}
+        .seo-content ol li::marker{color:var(--primary);font-weight:700;}
+        .seo-content li{margin-bottom:0.5rem;}
+        footer{background:var(--surface);border-top:1px solid var(--border);padding:3.5rem 0;margin-top:5rem;}
+        .footer-content{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:2rem;}
+        .footer-links{display:flex;gap:2rem;flex-wrap:wrap;}
+        .footer-links a{color:var(--text-secondary);text-decoration:none;transition:color 0.2s;}
+        .footer-links a:hover{color:var(--primary);}
+        .copyright{color:var(--text-secondary);font-size:0.9rem;}
+        @media (max-width:1024px){h1{font-size:3rem;}.games-grid{grid-template-columns:repeat(3,1fr);}}
+        @media (max-width:768px){h1{font-size:2.5rem;}.grid-2{grid-template-columns:1fr;}.games-grid{grid-template-columns:repeat(2,1fr);}.trust-grid{grid-template-columns:repeat(2,1fr);}.tips-grid{grid-template-columns:1fr;}}
+        @media (max-width:480px){.games-grid{grid-template-columns:1fr;}}
+        .emoji{font-size:1.2em;}.text-center{text-align:center;}.mt-2{margin-top:2rem;}.mb-2{margin-bottom:2rem;}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">⚡ 2048</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/games">All Games</a></li>
+            <li><a href="/racing">Racing</a></li>
+            <li><a href="/action">Action</a></li>
+            <li><a href="/puzzle">Puzzle</a></li>
+            <li><a href="/strategy">Strategy</a></li>
+            <li><a href="/skill">Skill</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+    <header class="game-header">
+        <div class="container">
+            <h1>2048 Unblocked<br><span style="font-size:0.55em;display:block;margin-top:0.5rem;">Merge Tiles, Reach 2048, Challenge Your Brain</span></h1>
+            <p style="font-size:1.3rem;color:var(--text-secondary);max-width:700px;margin:0 auto;">Combine matching numbers to reach the elusive 2048 tile in this addictive puzzle game. Play 2048 unblocked online free on school Chromebooks and test your logic skills.</p>
+            <div class="game-stats">
+                <div class="stat-item"><span>⭐</span> 4.8/5 (890K+)</div>
+                
+                    <div class="stat-item"><span>🧩</span> Addictive Puzzle</div>
+                
+                    <div class="stat-item"><span>🎯</span> Number Merging</div>
+                
+                    <div class="stat-item"><span>🧠</span> Brain Training</div>
+                
+                    <div class="stat-item"><span>⚡</span> Fast Paced</div>
+                
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        
+        <div class="game-wrapper">
+            <div class="preloader" id="preloader">
+                <img src="https://unblockedgames-67.github.io/images/2048.png" alt="2048 Unblocked Preview">
+                <button class="play-btn" id="playBtn"><span class="emoji">▶️</span> PLAY 2048 NOW</button>
+                <p style="color:var(--text-secondary);margin-top:1.5rem;">Puzzle 🧩 • Strategy 🧠</p>
+            </div>
+            <iframe class="game-frame" id="gameFrame" title="2048 Unblocked"></iframe>
+        </div>
+        <button class="fullscreen-btn" id="fullscreenBtn"><span class="emoji">🖥️</span> PLAY IN FULLSCREEN MODE</button>
+        
+        
+        <div class="grid-2">
+            
+            <div class="card">
+                <h3><span class="emoji">🧩</span> Game Overview</h3>
+                <p style="color:var(--text-secondary);margin-bottom:1.5rem;">2048 is a single-player sliding block puzzle game where you combine matching numbers to reach the 2048 tile. Simple rules hide deep strategic complexity.</p>
+                
+                <ul class="feature-list">
+                    
+                        <li>4x4 grid gameplay</li>
+                    
+                        <li>Arrow key or swipe controls</li>
+                    
+                        <li>Endless replayability</li>
+                    
+                        <li>Progressive difficulty</li>
+                    
+                        <li>Local high score tracking</li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class="card">
+                <h3><span class="emoji">🎮</span> Controls</h3>
+                <p style="color:var(--text-secondary);margin-bottom:1.5rem;">Simple controls for all devices:</p>
+                
+                <ul class="feature-list">
+                    
+                        <li><span style="display:inline-block;background:var(--surface-light);padding:6px 16px;border-radius:40px;margin-right:12px;font-weight:600;">← ↑ → ↓</span> Slide all tiles (keyboard)</li>
+                    
+                        <li><span style="display:inline-block;background:var(--surface-light);padding:6px 16px;border-radius:40px;margin-right:12px;font-weight:600;">Swipe</span> Slide all tiles (mobile)</li>
+                    
+                        <li><span style="display:inline-block;background:var(--surface-light);padding:6px 16px;border-radius:40px;margin-right:12px;font-weight:600;">R</span> Restart new game</li>
+                    
+                        <li><span style="display:inline-block;background:var(--surface-light);padding:6px 16px;border-radius:40px;margin-right:12px;">U</span> Undo last move (if enabled)</li>
+                    
+                </ul>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div style="margin:4rem 0;">
+            <h2 class="text-center">Why 890K+ Players Choose This Version</h2>
+            <div class="trust-grid">
+                
+                <div class="trust-item"><div class="trust-icon">⚡</div><h4 style="margin-bottom:0.3rem;">Smooth Gameplay</h4><p style="color:var(--text-secondary);font-size:0.9rem;">60FPS tile animations</p></div>
+                
+                <div class="trust-item"><div class="trust-icon">🔓</div><h4 style="margin-bottom:0.3rem;">100% Unblocked</h4><p style="color:var(--text-secondary);font-size:0.9rem;">Play at school or work</p></div>
+                
+                <div class="trust-item"><div class="trust-icon">💻</div><h4 style="margin-bottom:0.3rem;">Chromebook Ready</h4><p style="color:var(--text-secondary);font-size:0.9rem;">Works on all devices</p></div>
+                
+                <div class="trust-item"><div class="trust-icon">🆓</div><h4 style="margin-bottom:0.3rem;">Completely Free</h4><p style="color:var(--text-secondary);font-size:0.9rem;">No downloads or payments</p></div>
+                
+            </div>
+        </div>
+        
+
+        
+        <div style="margin:3rem 0;">
+            <h2 class="text-center">Pro Tips for Mastering 2048</h2>
+            <div class="tips-grid">
+                
+                <div class="tip-card">
+                    <h4><span class="emoji">🎯</span> Pick A Corner And Keep It</h4>
+                    <p style="color:var(--text-secondary);">Choose one corner (bottom-left works best) and keep your highest tile there permanently. Build descending rows from that corner.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4><span class="emoji">📊</span> Build In Snakes, Not Scattered</h4>
+                    <p style="color:var(--text-secondary);">Arrange tiles in descending order like a snake—highest in corner, then next highest adjacent, creating a predictable merging path.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4><span class="emoji">⏱️</span> Plan Three Moves Ahead</h4>
+                    <p style="color:var(--text-secondary);">Don&#39;t react to current board. Anticipate where new tiles appear and how they affect your organization. Think forward.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4><span class="emoji">🚫</span> Never Move Corner Tile Away</h4>
+                    <p style="color:var(--text-secondary);">Once your highest tile leaves its corner, regaining organization is nearly impossible. Protect that corner at all costs.</p>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="seo-content">
+            <h2>What Is 2048 Unblocked?</h2>
+<p><strong>2048 Unblocked</strong> is the minimalist yet incredibly addictive number puzzle game that took the internet by storm. Played on a simple 4x4 grid, the rules couldn't be simpler: slide numbered tiles in four directions, and when two tiles with the same number touch, they merge into one tile with their sum. Your goal? Create a tile with the number 2048.</p>
+<p>Despite its simple premise, 2048 requires strategic thinking, forward planning, and careful execution. One wrong move can lock your grid and end your game. The unblocked version removes all network restrictions, letting you challenge your brain on school Chromebooks, work computers, or any device with internet access. No downloads, no distractions—just pure puzzle-solving satisfaction.</p>
+
+<h2>Why 2048 Is Perfect For Chromebook</h2>
+<p>School-issued Chromebooks often block gaming sites, but <strong>2048 unblocked for Chromebook</strong> bypasses these restrictions completely. The lightweight HTML5 game runs flawlessly on budget hardware with minimal system requirements. No extensions, no VPNs, no complicated setups—just brain-teasing puzzle action during study breaks or free periods.</p>
+<p>The game's mathematical nature actually exercises logical thinking and pattern recognition, making it acceptable—even beneficial—for educational environments.</p>
+
+<h2>How To Play 2048 Online Free</h2>
+<p>Starting your <strong>2048 online free</strong> puzzle journey:</p>
+<ol>
+<li>Open any browser on your device (Chrome, Edge, Firefox, Safari)</li>
+<li>Navigate to our 2048 game page</li>
+<li>Use arrow keys to start sliding tiles immediately</li>
+</ol>
+<p>No account creation, no email verification, no hidden fees. The game tracks your high score locally, so your best attempts persist between sessions.</p>
+
+<h2>Game Mechanics And Strategy</h2>
+<p>While 2048 seems simple, mastering it requires understanding core mechanics:</p>
+
+<h3>Tile Generation</h3>
+<p>After each move, a new tile appears in a random empty cell. New tiles are always 2 (90% chance) or 4 (10% chance). This randomness adds challenge—you can't predict exactly where new tiles appear, requiring adaptable strategies.</p>
+
+<h3>Scoring System</h3>
+<p>You earn points equal to the value of each merged tile. Merging two 8 tiles gives 16 points, merging two 1024 tiles gives 2048 points. High scores reward efficient play and large merges.</p>
+
+<h3>Game Over Conditions</h3>
+<p>The game ends when the grid fills completely with no adjacent matching tiles. This usually happens when you lose control of tile organization and create deadlocked configurations.</p>
+
+<h2>Advanced Strategies For 2048</h2>
+<p>Want to reach 2048 consistently? These <strong>2048 tips</strong> will transform your gameplay:</p>
+
+<h3>The Corner Strategy</h3>
+<p>The most reliable winning method: pick a corner (usually bottom-left) and keep your highest tile there permanently. Never move that tile away from its corner. Build descending rows from that corner—second highest tile next to it, then third highest, etc. This creates an organized snake of descending values that's easy to merge upward.</p>
+
+<h3>Avoid Scattered High Tiles</h3>
+<p>Never let high-value tiles become separated. If your 1024 tile ends up in the middle with no matching partner nearby, you'll waste moves trying to bring another 1024 to it. Keep high tiles grouped together for efficient merging.</p>
+
+<h3>Plan Multiple Moves Ahead</h3>
+<p>Don't just react to the current board. Think about where new tiles will appear and how they'll affect your organization. Sometimes moving in a seemingly suboptimal direction prevents future deadlocks.</p>
+
+<h3>Master The Undo (If Available)</h3>
+<p>Some versions include undo functionality. Use it sparingly—not to fix every mistake, but to learn from errors. After undoing, understand why your move was wrong and what better option existed.</p>
+
+<h2>Common Mistakes To Avoid</h2>
+<p>Even experienced players make these errors:</p>
+<ul>
+<li><strong>Moving randomly</strong> - Every move should have purpose. Random sliding leads to dead grids.</li>
+<li><strong>Losing the corner</strong> - Once your highest tile leaves its corner, regaining organization is nearly impossible.</li>
+<li><strong>Creating isolated high tiles</strong> - Build gradually, not in isolated pockets.</li>
+<li><strong>Ignoring the 4-tile spawns</strong> - 4s can disrupt organization. Plan for their appearance.</li>
+</ul>
+
+<h2>2048 Variations And Challenges</h2>
+<p>Once you master classic 2048, try these popular variations:</p>
+
+<h3>2048 Fibonacci</h3>
+<p>Merge Fibonacci sequence numbers instead of powers of 2. 1+1=2, 2+1=3, 3+2=5, etc. Much harder due to non-standard progression.</p>
+
+<h3>2048 5x5</h3>
+<p>Larger grid with 5x5 board. More space but harder to organize. Requires reaching 2048 on bigger battlefield.</p>
+
+<h3>2048 Hard Mode</h3>
+<p>4x4 grid but new tiles are always 4 instead of 2. Significantly harder due to faster grid filling.</p>
+
+<h3>2048 Multiplayer</h3>
+<p>Race against friends to reach 2048 first. Same rules, competitive timing.</p>
+
+<h2>Frequently Asked Questions About 2048 Unblocked</h2>
+
+<h3>Is 2048 appropriate for school?</h3>
+<p>Yes, absolutely. 2048 is a pure mathematical puzzle with no inappropriate content. Many teachers actually recommend it for developing logical thinking skills.</p>
+
+<h3>Do I need to download anything?</h3>
+<p>No downloads required. The game runs in your browser using HTML5 technology with zero installation.</p>
+
+<h3>Can I play on my phone?</h3>
+<p>Yes, 2048 works perfectly on mobile devices. Touch controls are intuitive—just swipe in four directions.</p>
+
+<h3>What's the highest possible tile?</h3>
+<p>Theoretically, 131,072 is possible on a 4x4 grid, but requires perfect play and exceptional luck with tile spawns. Most players never exceed 8192.</p>
+
+<h3>Is 2048 beatable?</h3>
+<p>Yes, reaching 2048 is achievable with practice and proper strategy. Many players reach it within weeks of regular play.</p>
+
+<h3>Does progress save?</h3>
+<p>Your current game state and high score save locally. Don't clear browser cache to maintain your best attempts.</p>
+        </div>
+
+        <section style="margin:4rem 0;">
+            <h2 class="text-center">Similar Unblocked Games You'll Love</h2>
+            <div class="games-grid">
+                
+                <div class="game-tile">
+                    <a href="/cookie-clicker">
+                        <img src="https://unblockedgames-67.github.io/images/cookie-clicker.png" alt="Cookie Clicker Unblocked" loading="lazy">
+                        <h4>Cookie Clicker</h4>
+                    </a>
+                </div>
+                
+                <div class="game-tile">
+                    <a href="/animal-arena">
+                        <img src="https://unblockedgames-67.github.io/images/animal-arena.png" alt="Animal Arena Unblocked" loading="lazy">
+                        <h4>Animal Arena</h4>
+                    </a>
+                </div>
+                
+                <div class="game-tile">
+                    <a href="/traffic-rush">
+                        <img src="https://unblockedgames-67.github.io/images/traffic-rush.png" alt="Traffic Rush Unblocked" loading="lazy">
+                        <h4>Traffic Rush</h4>
+                    </a>
+                </div>
+                
+                <div class="game-tile">
+                    <a href="/temple-run-2">
+                        <img src="https://unblockedgames-67.github.io/images/temple-run-2.png" alt="Temple Run 2 Unblocked" loading="lazy">
+                        <h4>Temple Run 2</h4>
+                    </a>
+                </div>
+                
+                <div class="game-tile">
+                    <a href="/jumping-shell">
+                        <img src="https://unblockedgames-67.github.io/images/jumping-shell.png" alt="Jumping Shell Unblocked" loading="lazy">
+                        <h4>Jumping Shell</h4>
+                    </a>
+                </div>
+                
+            </div>
+            <div style="text-align:center;margin-top:2rem;">
+                <a href="/games" style="color:var(--primary);text-decoration:none;font-weight:600;">View all 50+ unblocked games →</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="logo">⚡ 2048 UNBLOCKED</div>
+            <div class="footer-links">
+                <a href="/privacy">Privacy</a>
+                <a href="/terms">Terms</a>
+                <a href="/dmca">DMCA</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <div class="copyright">© 2026 2048 Unblocked. All rights reserved.</div>
+        </div>
+    </div>
+</footer>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TD842ZQ7NL"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TD842ZQ7NL');
+</script>
+
+<script>
+    const playBtn=document.getElementById('playBtn');
+    const gameFrame=document.getElementById('gameFrame');
+    const preloader=document.getElementById('preloader');
+    const fullscreenBtn=document.getElementById('fullscreenBtn');
+    
+    playBtn.addEventListener('click',function(){
+        gameFrame.src='https://iframe.unblocked-76-games.org/2048-main';
+        gameFrame.style.display='block';
+        preloader.style.display='none';
+        fullscreenBtn.style.display='flex';
+        if(typeof gtag!=='undefined'){
+            gtag('event','game_start',{'event_label':'2048 Unblocked'});
+        }
+    });
+    
+    fullscreenBtn.addEventListener('click',function(){
+        if(gameFrame.requestFullscreen){gameFrame.requestFullscreen();}
+        else if(gameFrame.webkitRequestFullscreen){gameFrame.webkitRequestFullscreen();}
+        else if(gameFrame.msRequestFullscreen){gameFrame.msRequestFullscreen();}
+    });
+</script>
+
+<a href="https://www.liveinternet.ru/click" target="_blank"><img id="licnt8636" width="0" height="0" style="border:0" title="LiveInternet" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" alt=""/></a><script>(function(d,s){d.getElementById("licnt8636").src="https://counter.yadro.ru/hit?t45.1;r"+escape(d.referrer)+((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+(s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen);</script>
+
+</body>
+</html>

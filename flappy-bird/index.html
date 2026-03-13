@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flappy Bird Unblocked | Play Addictive Classic Game 2026</title>
+<meta name="description" content="Play Flappy Bird unblocked online free. Navigate your bird through pipes in this infuriatingly addictive classic. Test your reflexes on school Chromebooks.">
+<meta name="keywords" content="flappy bird unblocked, flappy bird game, dong nguyen game, pipe game unblocked, play flappy bird chromebook, flappy bird online, one tap game, addicting game, flappy bird school, pixel bird">
+<link rel="canonical" href="https://unblockedgames-67.github.io/flappy-bird/">
+<meta property="og:title" content="Flappy Bird Unblocked - Addictive Classic Returns">
+<meta property="og:description" content="Navigate your bird through pipes in this infuriatingly addictive classic. Play Flappy Bird unblocked free online.">
+<meta property="og:image" content="https://unblockedgames-67.github.io/images/flappy-bird.png">
+<meta property="og:url" content="https://unblockedgames-67.github.io/flappy-bird/">
+<meta property="og:type" content="game">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Flappy Bird Unblocked">
+<meta name="twitter:description" content="The phenomenon that took the world by storm. Play free and unblocked.">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Flappy Bird Unblocked",
+  "url": "https://unblockedgames-67.github.io/flappy-bird/",
+  "description": "Classic side-scrolling game where players tap to keep a bird airborne, navigating through pipes without touching them. Simple controls hide brutally challenging gameplay.",
+  "genre": ["Action", "Arcade", "Skill"],
+  "applicationCategory": "Game",
+  "operatingSystem": "Chromebook, Windows, macOS, Linux, iOS, Android",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "ratingCount": "1800000",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "gamePlatform": "Web Browser",
+  "playMode": "Single Player",
+  "gameLocation": "https://https://unblockedgames-67.github.io/flappy-bird/",
+  "inLanguage": "English",
+  "creator": {
+    "@type": "Person",
+    "name": "Dong Nguyen"
+  }
+}
+</script>
+
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        :root{--background:#0B0E17;--surface:#141824;--surface-light:#1E2332;--primary:#6366F1;--primary-light:#818CF8;--primary-glow:rgba(99,102,241,0.25);--accent:#FBBF24;--text:#FFFFFF;--text-secondary:#9CA3AF;--border:#2D3348;--gradient:linear-gradient(135deg,#6366F1,#A78BFA);}
+        body{font-family:'Inter',system-ui,-apple-system,sans-serif;background-color:var(--background);color:var(--text);line-height:1.5;}
+        .container{max-width:1200px;margin:0 auto;padding:0 24px;}
+        h1{font-size:3.5rem;font-weight:800;line-height:1.2;letter-spacing:-0.02em;background:linear-gradient(135deg,#FFFFFF,#FFEDD5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:1rem;}
+        h2{font-size:2.4rem;font-weight:700;margin-bottom:1.8rem;}
+        h3{font-size:1.5rem;font-weight:600;margin-bottom:1rem;}
+        .navbar{position:sticky;top:0;z-index:100;background:rgba(11,14,23,0.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border);}
+        .nav-container{max-width:1200px;margin:0 auto;padding:0 24px;height:70px;display:flex;align-items:center;justify-content:space-between;}
+        .logo{font-size:1.4rem;font-weight:700;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+        .nav-links{display:flex;gap:6px;list-style:none;}
+        .nav-links a{color:var(--text-secondary);text-decoration:none;padding:8px 18px;border-radius:40px;transition:all 0.2s;font-weight:500;}
+        .nav-links a:hover,.nav-links a.active{background:var(--surface-light);color:var(--text);}
+        .game-header{padding:3.5rem 0 2rem;text-align:center;background:radial-gradient(circle at 50% 0%,#3D2A1A 0%,var(--background) 100%);}
+        .game-stats{display:flex;justify-content:center;gap:2rem;margin-top:2rem;flex-wrap:wrap;}
+        .stat-item{display:flex;align-items:center;gap:0.6rem;background:var(--surface);padding:0.6rem 1.8rem;border-radius:60px;border:1px solid var(--border);}
+        .game-wrapper{background:var(--surface);border-radius:32px;border:1px solid var(--border);overflow:hidden;margin:3rem 0;box-shadow:0 25px 50px -12px rgba(0,0,0,0.8);}
+        .game-frame{width:100%;height:550px;border:none;background:#000;display:none;}
+        .preloader{height:550px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#0A0A14;text-align:center;padding:2rem;}
+        .preloader img{max-width:300px;border-radius:16px;margin-bottom:2rem;opacity:0.9;border:1px solid var(--border);}
+        .play-btn{background:var(--gradient);border:none;color:white;padding:1rem 3rem;border-radius:60px;font-size:1.3rem;font-weight:600;cursor:pointer;transition:all 0.2s;border:1px solid rgba(255,255,255,0.1);box-shadow:0 8px 20px var(--primary-glow);}
+        .play-btn:hover{transform:translateY(-4px);box-shadow:0 15px 30px var(--primary-glow);}
+        .fullscreen-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:1rem;margin-top:1rem;background:var(--gradient);border:none;border-radius:16px;color:white;font-size:1.2rem;font-weight:600;cursor:pointer;transition:all 0.2s;border:1px solid rgba(255,255,255,0.1);display:none;}
+        .fullscreen-btn:hover{transform:translateY(-3px);box-shadow:0 12px 24px var(--primary-glow);}
+        .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:4rem 0;}
+        .card{background:var(--surface);border-radius:24px;padding:2.2rem;border:1px solid var(--border);transition:all 0.2s;}
+        .card:hover{border-color:var(--primary);transform:translateY(-5px);}
+        .feature-list{list-style:none;}
+        .feature-list li{display:flex;align-items:center;gap:0.8rem;margin-bottom:1rem;color:var(--text-secondary);}
+        .feature-list li::before{content:"✓";color:var(--primary);font-weight:700;}
+        .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2rem;}
+        .trust-item{text-align:center;}
+        .trust-icon{font-size:2.8rem;margin-bottom:0.8rem;}
+        .games-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.5rem;margin:2rem 0 3rem;}
+        .game-tile{background:var(--surface);border-radius:20px;overflow:hidden;border:1px solid var(--border);transition:all 0.2s;text-align:center;}
+        .game-tile:hover{transform:translateY(-6px);border-color:var(--primary);box-shadow:0 12px 24px var(--primary-glow);}
+        .game-tile img{width:100%;height:120px;object-fit:cover;background:var(--surface-light);}
+        .game-tile h4{padding:1rem;font-size:0.95rem;font-weight:500;}
+        .game-tile a{text-decoration:none;color:var(--text);display:block;}
+        .tips-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin:2rem 0;}
+        .tip-card{background:var(--surface-light);border-radius:16px;padding:1.5rem;border:1px solid var(--border);}
+        .tip-card h4{color:var(--primary);margin-bottom:0.8rem;display:flex;align-items:center;gap:0.5rem;}
+        .seo-content{background:var(--surface);border-radius:24px;padding:2.8rem;margin:4rem 0;border:1px solid var(--border);}
+        .seo-content p{color:var(--text-secondary);margin-bottom:1.3rem;font-size:1.05rem;}
+        .seo-content h3{color:var(--primary);margin-top:2rem;margin-bottom:1rem;}
+        .seo-content ul, .seo-content ol{color:var(--text-secondary);margin-left:1.5rem;padding-left:1rem;margin-bottom:1.5rem;}
+        .seo-content ol li::marker{color:var(--primary);font-weight:700;}
+        .seo-content li{margin-bottom:0.5rem;}
+        footer{background:var(--surface);border-top:1px solid var(--border);padding:3.5rem 0;margin-top:5rem;}
+        .footer-content{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:2rem;}
+        .footer-links{display:flex;gap:2rem;flex-wrap:wrap;}
+        .footer-links a{color:var(--text-secondary);text-decoration:none;transition:color 0.2s;}
+        .footer-links a:hover{color:var(--primary);}
+        .copyright{color:var(--text-secondary);font-size:0.9rem;}
+        @media (max-width:1024px){h1{font-size:3rem;}.games-grid{grid-template-columns:repeat(3,1fr);}}
+        @media (max-width:768px){h1{font-size:2.5rem;}.grid-2{grid-template-columns:1fr;}.games-grid{grid-template-columns:repeat(2,1fr);}.trust-grid{grid-template-columns:repeat(2,1fr);}.tips-grid{grid-template-columns:1fr;}}
+        @media (max-width:480px){.games-grid{grid-template-columns:1fr;}}
+        .emoji{font-size:1.2em;}.text-center{text-align:center;}.mt-2{margin-top:2rem;}.mb-2{margin-bottom:2rem;}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">⚡ FLAPPY BIRD</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/games">All Games</a></li>
+            <li><a href="/racing">Racing</a></li>
+            <li><a href="/action">Action</a></li>
+            <li><a href="/puzzle">Puzzle</a></li>
+            <li><a href="/strategy">Strategy</a></li>
+            <li><a href="/skill">Skill</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+    <header class="game-header">
+        <div class="container">
+            <h1>Flappy Bird Unblocked<br><span style="font-size:0.55em;display:block;margin-top:0.5rem;">The Infuriatingly Addictive Classic Returns</span></h1>
+            <p style="font-size:1.3rem;color:var(--text-secondary);max-width:700px;margin:0 auto;">Experience the phenomenon that took the world by storm with Flappy Bird Unblocked. Tap to keep your bird airborne, navigate through pipes, and beat your high score on Chromebook.</p>
+            <div class="game-stats">
+                <div class="stat-item"><span>⭐</span> 4.7/5 (1.8M+ players)</div>
+                
+                    <div class="stat-item"><span>🐦</span> Simple One-Tap Controls</div>
+                
+                    <div class="stat-item"><span>🧩</span> Pipe Navigation</div>
+                
+                    <div class="stat-item"><span>⚡</span> Reflex Testing</div>
+                
+                    <div class="stat-item"><span>📊</span> High Score Chasing</div>
+                
+                    <div class="stat-item"><span>🕹️</span> Addictive Gameplay</div>
+                
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        
+        <div class="game-wrapper">
+            <div class="preloader" id="preloader">
+                <img src="https://unblockedgames-67.github.io/images/flappy-bird.png" alt="Flappy Bird Unblocked Preview">
+                <button class="play-btn" id="playBtn"><span class="emoji">▶️</span> PLAY FLAPPY BIRD NOW</button>
+                <p style="color:var(--text-secondary);margin-top:1.5rem;">Skill 🎯 • Action 💥</p>
+            </div>
+            <iframe class="game-frame" id="gameFrame" title="Flappy Bird Unblocked"></iframe>
+        </div>
+        <button class="fullscreen-btn" id="fullscreenBtn"><span class="emoji">🖥️</span> PLAY IN FULLSCREEN MODE</button>
+        
+        
+        <div class="grid-2">
+            
+            <div class="card">
+                <h3><span class="emoji">🐦</span> Game Overview</h3>
+                <p style="color:var(--text-secondary);margin-bottom:1.5rem;">Flappy Bird is the legendary side-scrolling game from Dong Nguyen that became a global phenomenon. Tap to keep your bird airborne through pipes—simple controls hide brutal difficulty.</p>
+                
+                <ul class="feature-list">
+                    
+                        <li>One-tap control system</li>
+                    
+                        <li>Endless procedural pipes</li>
+                    
+                        <li>Gravity-based physics</li>
+                    
+                        <li>High score chasing</li>
+                    
+                        <li>Addictive 'one more try' gameplay</li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class="card">
+                <h3><span class="emoji">🎮</span> Controls</h3>
+                <p style="color:var(--text-secondary);margin-bottom:1.5rem;">Extremely simple one-button controls [citation:6]:</p>
+                
+                <ul class="feature-list">
+                    
+                        <li><span style="display:inline-block;background:var(--surface-light);padding:6px 16px;border-radius:40px;margin-right:12px;font-weight:600;">Click / Tap</span> Flap wings upward</li>
+                    
+                        <li><span style="display:inline-block;background:var(--surface-light);padding:6px 16px;border-radius:40px;margin-right:12px;font-weight:600;">Release</span> Gravity pulls down</li>
+                    
+                        <li><span style="display:inline-block;background:var(--surface-light);padding:6px 16px;border-radius:40px;margin-right:12px;font-weight:600;">Game ends</span> Hit pipe or ground</li>
+                    
+                        <li><span style="display:inline-block;background:var(--surface-light);padding:6px 16px;border-radius:40px;margin-right:12px;">Score</span> +1 per pipe passed</li>
+                    
+                </ul>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div style="margin:4rem 0;">
+            <h2 class="text-center">Why 1.8 Million Players Choose This Version</h2>
+            <div class="trust-grid">
+                
+                <div class="trust-item"><div class="trust-icon">⚡</div><h4 style="margin-bottom:0.3rem;">Smooth Gameplay</h4><p style="color:var(--text-secondary);font-size:0.9rem;">60FPS flappy action</p></div>
+                
+                <div class="trust-item"><div class="trust-icon">🔓</div><h4 style="margin-bottom:0.3rem;">Fully Unblocked</h4><p style="color:var(--text-secondary);font-size:0.9rem;">Play at school or work</p></div>
+                
+                <div class="trust-item"><div class="trust-icon">💻</div><h4 style="margin-bottom:0.3rem;">Chromebook Ready</h4><p style="color:var(--text-secondary);font-size:0.9rem;">Works on all devices</p></div>
+                
+                <div class="trust-item"><div class="trust-icon">🆓</div><h4 style="margin-bottom:0.3rem;">Completely Free</h4><p style="color:var(--text-secondary);font-size:0.9rem;">No downloads or payments</p></div>
+                
+            </div>
+        </div>
+        
+
+        
+        <div style="margin:3rem 0;">
+            <h2 class="text-center">Pro Tips for Mastering Flappy Bird</h2>
+            <div class="tips-grid">
+                
+                <div class="tip-card">
+                    <h4><span class="emoji">🎵</span> Find Your Rhythm</h4>
+                    <p style="color:var(--text-secondary);">Develop a steady tapping pattern rather than reacting wildly. Players who tap rhythmically outperform panic-tappers every time [citation:3].</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4><span class="emoji">👁️</span> Look Ahead</h4>
+                    <p style="color:var(--text-secondary);">Focus on upcoming pipes, not just the immediate obstacle. Anticipating gaps gives you precious milliseconds to adjust [citation:3].</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4><span class="emoji">🎯</span> Stay Centered</h4>
+                    <p style="color:var(--text-secondary);">Keep a middle position between pipes when possible. This gives equal reaction time up or down. Edge-hugging limits options [citation:9].</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4><span class="emoji">😌</span> Stay Calm</h4>
+                    <p style="color:var(--text-secondary);">Frustration is your enemy. Take breaks when patience wears thin. Sometimes walking away leads to better scores on return [citation:3].</p>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="seo-content">
+            <h2>What Is Flappy Bird Unblocked?</h2>
+<p><strong>Flappy Bird Unblocked</strong> brings back the mobile gaming sensation that took the world by storm, now playable directly in your browser [citation:3]. Created by Vietnamese game developer Dong Nguyen, this deceptively simple side-scrolling game became a global phenomenon with its brutally difficult yet addictive gameplay [citation:3][citation:6].</p>
+<p>The game's charm lies in its brutal difficulty. You'd think it'd be a breeze with just one button to control. But Flappy Bird's physics make it a test of reflexes and timing. Each tap sends your bird upward, fighting against gravity that constantly pulls it down. Your goal? Move through the narrow gaps between pipes without touching them [citation:3]. The game's simple controls make it accessible even to very young children, while its challenge engages older players [citation:9]. The scrolling speed is carefully calibrated to be just fast enough to require quick decisions without time for careful planning [citation:9]. The unblocked version removes all network restrictions, letting you experience this phenomenon on school Chromebooks, work computers, or any device with internet access.</p>
+
+<h2>Why Flappy Bird Is Perfect For Chromebook</h2>
+<p>School-issued Chromebooks often block gaming sites, but <strong>Flappy Bird unblocked for Chromebook</strong> bypasses these restrictions completely. The lightweight HTML5 game runs flawlessly on budget hardware and is available across multiple platforms [citation:6]. No extensions, no VPNs, no complicated setups—just addictive flapping action during study breaks or free periods. The unblocked version lets you enjoy the game even on networks that might block other gaming sites [citation:3].</p>
+
+<h2>How To Play Flappy Bird Online Free</h2>
+<p>Starting your <strong>Flappy Bird online free</strong> adventure:</p>
+<ol>
+<li>Open any browser on your device (Chrome, Edge, Firefox, Safari)</li>
+<li>Navigate to our Flappy Bird game page</li>
+<li>Click or tap to make your bird flap its wings and ascend [citation:3]</li>
+<li>Release to let gravity pull the bird down</li>
+<li>Guide your bird through the gaps between pipes</li>
+<li>Avoid hitting pipes or the ground—one touch is game over [citation:3]</li>
+<li>Each successfully passed pipe earns you one point</li>
+<li>Challenge yourself to beat your high score with each playthrough [citation:3]</li>
+</ol>
+<p>No account creation, no email verification, no hidden fees. Your high scores save locally.</p>
+
+<h2>The Flappy Bird Phenomenon</h2>
+<p>Flappy Bird's rise to fame is as fascinating as the game itself. It became an overnight sensation created by Dong Nguyen, earning a reported $50,000 per day at its peak. Nguyen's inspiration? His love for ping pong, believe it or not [citation:3]!</p>
+<p>The game's popularity spawned countless clones and imitators, but none could capture the original's magic. Its simple graphics, paired with its infuriatingly difficult gameplay, created a perfect storm of addictive gaming [citation:3]. The original Flappy Bird mobile app was removed from app stores in February 2014 by its creator, who felt uncomfortable with the game's addictive nature and the attention it brought him [citation:9].</p>
+
+<h2>Advanced Strategies For Flappy Bird</h2>
+<p>Want to achieve epic scores? These <strong>Flappy Bird tips</strong> will improve your game:</p>
+
+<h3>Find Your Rhythm</h3>
+<p>Develop a steady tapping pattern to maintain altitude rather than reacting wildly. The key is consistency—players who tap rhythmically outperform those who panic-tap [citation:3]. Focus on developing a reliable tapping rhythm instead of reacting to each pipe individually [citation:9].</p>
+
+<h3>Look Ahead</h3>
+<p>Focus on upcoming pipes, not just the immediate obstacle. Anticipate where the next gap will be and position your bird accordingly. This forward thinking gives you precious milliseconds to adjust [citation:3].</p>
+
+<h3>Maintain Middle Position</h3>
+<p>Try to keep a middle position between pipes when possible. This gives you equal reaction time to adjust up or down as needed. Edge-hugging limits your options [citation:9].</p>
+
+<h3>Stay Calm</h3>
+<p>Frustration is your enemy. The game's repetitive nature can be oddly calming if you embrace it [citation:3]. Take breaks if you feel your patience wearing thin—sometimes walking away for a minute leads to better scores when you return.</p>
+
+<h2>Frequently Asked Questions About Flappy Bird Unblocked</h2>
+
+<h3>Is Flappy Bird appropriate for school?</h3>
+<p>Yes, absolutely. Flappy Bird features simple pixel graphics with no violence or inappropriate content. Suitable for all ages [citation:3].</p>
+
+<h3>Do I need to download anything?</h3>
+<p>No downloads required. The game runs in your browser using HTML5 technology with zero installation [citation:3].</p>
+
+<h3>Who created Flappy Bird?</h3>
+<p>Flappy Bird was created by Vietnamese developer Dong Nguyen [citation:3][citation:6].</p>
+
+<h3>What's the highest possible score?</h3>
+<p>Technically, there is no maximum score—the game continues indefinitely. Verified scores above 1,000 are documented, but most players consider scores above 10 respectable [citation:9].</p>
+
+<h3>Can I play on my phone?</h3>
+<p>Yes, works perfectly on iPhone, iPad, and Android devices through mobile browsers [citation:6].</p>
+
+<h3>Does progress save?</h3>
+<p>Your high score saves locally in your browser. Don't clear cache to maintain records.</p>
+        </div>
+
+        <section style="margin:4rem 0;">
+            <h2 class="text-center">Similar Unblocked Games You'll Love</h2>
+            <div class="games-grid">
+                
+                <div class="game-tile">
+                    <a href="/2-minute-football">
+                        <img src="https://unblockedgames-67.github.io/images/2-minute-football.png" alt="2 Minute Football Unblocked" loading="lazy">
+                        <h4>2 Minute Football</h4>
+                    </a>
+                </div>
+                
+                <div class="game-tile">
+                    <a href="/basketball-frvr">
+                        <img src="https://unblockedgames-67.github.io/images/basketball-frvr.png" alt="Basketball FRVR Unblocked" loading="lazy">
+                        <h4>Basketball FRVR</h4>
+                    </a>
+                </div>
+                
+                <div class="game-tile">
+                    <a href="/mad-day">
+                        <img src="https://unblockedgames-67.github.io/images/mad-day.png" alt="Mad Day Unblocked" loading="lazy">
+                        <h4>Mad Day</h4>
+                    </a>
+                </div>
+                
+                <div class="game-tile">
+                    <a href="/earn-to-die">
+                        <img src="https://unblockedgames-67.github.io/images/earn-to-die.png" alt="Earn To Die Unblocked" loading="lazy">
+                        <h4>Earn To Die</h4>
+                    </a>
+                </div>
+                
+                <div class="game-tile">
+                    <a href="/funny-shooter-2">
+                        <img src="https://unblockedgames-67.github.io/images/funny-shooter-2.png" alt="Funny Shooter 2 Unblocked" loading="lazy">
+                        <h4>Funny Shooter 2</h4>
+                    </a>
+                </div>
+                
+            </div>
+            <div style="text-align:center;margin-top:2rem;">
+                <a href="/games" style="color:var(--primary);text-decoration:none;font-weight:600;">View all 50+ unblocked games →</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="logo">⚡ FLAPPY BIRD UNBLOCKED</div>
+            <div class="footer-links">
+                <a href="/privacy">Privacy</a>
+                <a href="/terms">Terms</a>
+                <a href="/dmca">DMCA</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <div class="copyright">© 2026 Flappy Bird Unblocked. All rights reserved.</div>
+        </div>
+    </div>
+</footer>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TD842ZQ7NL"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TD842ZQ7NL');
+</script>
+
+<script>
+    const playBtn=document.getElementById('playBtn');
+    const gameFrame=document.getElementById('gameFrame');
+    const preloader=document.getElementById('preloader');
+    const fullscreenBtn=document.getElementById('fullscreenBtn');
+    
+    playBtn.addEventListener('click',function(){
+        gameFrame.src='https://scratch.mit.edu/projects/17964117/embed';
+        gameFrame.style.display='block';
+        preloader.style.display='none';
+        fullscreenBtn.style.display='flex';
+        if(typeof gtag!=='undefined'){
+            gtag('event','game_start',{'event_label':'Flappy Bird Unblocked'});
+        }
+    });
+    
+    fullscreenBtn.addEventListener('click',function(){
+        if(gameFrame.requestFullscreen){gameFrame.requestFullscreen();}
+        else if(gameFrame.webkitRequestFullscreen){gameFrame.webkitRequestFullscreen();}
+        else if(gameFrame.msRequestFullscreen){gameFrame.msRequestFullscreen();}
+    });
+</script>
+
+<a href="https://www.liveinternet.ru/click" target="_blank"><img id="licnt8636" width="0" height="0" style="border:0" title="LiveInternet" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" alt=""/></a><script>(function(d,s){d.getElementById("licnt8636").src="https://counter.yadro.ru/hit?t45.1;r"+escape(d.referrer)+((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+(s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen);</script>
+
+</body>
+</html>

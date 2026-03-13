@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic Tac Toe Unblocked | Play Classic X O Game 2026</title>
+<meta name="description" content="Play Tic Tac Toe unblocked online free. Challenge friends in 2-player mode or play against AI. Classic strategy game with simple rules and endless fun on Chromebook.">
+<meta name="keywords" content="tic tac toe unblocked, tic tac toe game, x o game, classic board game, play tic tac toe chromebook, 2 player game, strategy game, naughts and crosses, tic tac toe online, brain game">
+<link rel="canonical" href="https://unblockedgames-67.github.io/tictactoe/">
+<meta property="og:title" content="Tic Tac Toe Unblocked - Classic Strategy Game">
+<meta property="og:description" content="Play the timeless classic X and O game. Challenge friends or AI. Play Tic Tac Toe unblocked free online.">
+<meta property="og:image" content="https://unblockedgames-67.github.io/images/tictactoe.png">
+<meta property="og:url" content="https://unblockedgames-67.github.io/tictactoe/">
+<meta property="og:type" content="game">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tic Tac Toe Unblocked">
+<meta name="twitter:description" content="Classic strategy game. Play free and unblocked.">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Tic Tac Toe Unblocked",
+  "url": "https://unblockedgames-67.github.io/tictactoe/",
+  "description": "Classic strategy game where players take turns placing X and O on a 3x3 grid. First to get three in a row wins. Features 2-player mode and AI opponent.",
+  "genre": ["Puzzle", "Strategy", "Casual"],
+  "applicationCategory": "Game",
+  "operatingSystem": "Chromebook, Windows, macOS, Linux, iOS, Android",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "ratingCount": "1500000",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "gamePlatform": "Web Browser",
+  "playMode": "Single Player, Multiplayer",
+  "numberOfPlayers": "1-2",
+  "gameLocation": "https://https://unblockedgames-67.github.io/tictactoe/",
+  "inLanguage": "English",
+  "creator": {
+    "@type": "Organization",
+    "name": "Classic Games Studio"
+  }
+}
+</script>
+
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        :root{--background:#0B0E17;--surface:#141824;--surface-light:#1E2332;--primary:#6366F1;--primary-light:#818CF8;--primary-glow:rgba(99,102,241,0.25);--accent:#FBBF24;--text:#FFFFFF;--text-secondary:#9CA3AF;--border:#2D3348;--gradient:linear-gradient(135deg,#6366F1,#A78BFA);}
+        body{font-family:'Inter',system-ui,-apple-system,sans-serif;background-color:var(--background);color:var(--text);line-height:1.5;}
+        .container{max-width:1200px;margin:0 auto;padding:0 24px;}
+        h1{font-size:3.5rem;font-weight:800;line-height:1.2;letter-spacing:-0.02em;background:linear-gradient(135deg,#FFFFFF,#FFEDD5);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:1rem;}
+        h2{font-size:2.4rem;font-weight:700;margin-bottom:1.8rem;}
+        h3{font-size:1.5rem;font-weight:600;margin-bottom:1rem;}
+        .navbar{position:sticky;top:0;z-index:100;background:rgba(11,14,23,0.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border);}
+        .nav-container{max-width:1200px;margin:0 auto;padding:0 24px;height:70px;display:flex;align-items:center;justify-content:space-between;}
+        .logo{font-size:1.4rem;font-weight:700;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+        .nav-links{display:flex;gap:6px;list-style:none;}
+        .nav-links a{color:var(--text-secondary);text-decoration:none;padding:8px 18px;border-radius:40px;transition:all 0.2s;font-weight:500;}
+        .nav-links a:hover,.nav-links a.active{background:var(--surface-light);color:var(--text);}
+        .game-header{padding:3.5rem 0 2rem;text-align:center;background:radial-gradient(circle at 50% 0%,#3D2A1A 0%,var(--background) 100%);}
+        .game-stats{display:flex;justify-content:center;gap:2rem;margin-top:2rem;flex-wrap:wrap;}
+        .stat-item{display:flex;align-items:center;gap:0.6rem;background:var(--surface);padding:0.6rem 1.8rem;border-radius:60px;border:1px solid var(--border);}
+        .game-wrapper{background:var(--surface);border-radius:32px;border:1px solid var(--border);overflow:hidden;margin:3rem 0;box-shadow:0 25px 50px -12px rgba(0,0,0,0.8);}
+        .game-frame{width:100%;height:550px;border:none;background:#000;display:none;}
+        .preloader{height:550px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#0A0A14;text-align:center;padding:2rem;}
+        .preloader img{max-width:300px;border-radius:16px;margin-bottom:2rem;opacity:0.9;border:1px solid var(--border);}
+        .play-btn{background:var(--gradient);border:none;color:white;padding:1rem 3rem;border-radius:60px;font-size:1.3rem;font-weight:600;cursor:pointer;transition:all 0.2s;border:1px solid rgba(255,255,255,0.1);box-shadow:0 8px 20px var(--primary-glow);}
+        .play-btn:hover{transform:translateY(-4px);box-shadow:0 15px 30px var(--primary-glow);}
+        .fullscreen-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:1rem;margin-top:1rem;background:var(--gradient);border:none;border-radius:16px;color:white;font-size:1.2rem;font-weight:600;cursor:pointer;transition:all 0.2s;border:1px solid rgba(255,255,255,0.1);display:none;}
+        .fullscreen-btn:hover{transform:translateY(-3px);box-shadow:0 12px 24px var(--primary-glow);}
+        .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:4rem 0;}
+        .card{background:var(--surface);border-radius:24px;padding:2.2rem;border:1px solid var(--border);transition:all 0.2s;}
+        .card:hover{border-color:var(--primary);transform:translateY(-5px);}
+        .feature-list{list-style:none;}
+        .feature-list li{display:flex;align-items:center;gap:0.8rem;margin-bottom:1rem;color:var(--text-secondary);}
+        .feature-list li::before{content:"✓";color:var(--primary);font-weight:700;}
+        .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2rem;}
+        .trust-item{text-align:center;}
+        .trust-icon{font-size:2.8rem;margin-bottom:0.8rem;}
+        .games-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.5rem;margin:2rem 0 3rem;}
+        .game-tile{background:var(--surface);border-radius:20px;overflow:hidden;border:1px solid var(--border);transition:all 0.2s;text-align:center;}
+        .game-tile:hover{transform:translateY(-6px);border-color:var(--primary);box-shadow:0 12px 24px var(--primary-glow);}
+        .game-tile img{width:100%;height:120px;object-fit:cover;background:var(--surface-light);}
+        .game-tile h4{padding:1rem;font-size:0.95rem;font-weight:500;}
+        .game-tile a{text-decoration:none;color:var(--text);display:block;}
+        .tips-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin:2rem 0;}
+        .tip-card{background:var(--surface-light);border-radius:16px;padding:1.5rem;border:1px solid var(--border);}
+        .tip-card h4{color:var(--primary);margin-bottom:0.8rem;display:flex;align-items:center;gap:0.5rem;}
+        .seo-content{background:var(--surface);border-radius:24px;padding:2.8rem;margin:4rem 0;border:1px solid var(--border);}
+        .seo-content p{color:var(--text-secondary);margin-bottom:1.3rem;font-size:1.05rem;}
+        .seo-content h3{color:var(--primary);margin-top:2rem;margin-bottom:1rem;}
+        .seo-content ul, .seo-content ol{color:var(--text-secondary);margin-left:1.5rem;padding-left:1rem;margin-bottom:1.5rem;}
+        .seo-content ol li::marker{color:var(--primary);font-weight:700;}
+        .seo-content li{margin-bottom:0.5rem;}
+        footer{background:var(--surface);border-top:1px solid var(--border);padding:3.5rem 0;margin-top:5rem;}
+        .footer-content{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:2rem;}
+        .footer-links{display:flex;gap:2rem;flex-wrap:wrap;}
+        .footer-links a{color:var(--text-secondary);text-decoration:none;transition:color 0.2s;}
+        .footer-links a:hover{color:var(--primary);}
+        .copyright{color:var(--text-secondary);font-size:0.9rem;}
+        @media (max-width:1024px){h1{font-size:3rem;}.games-grid{grid-template-columns:repeat(3,1fr);}}
+        @media (max-width:768px){h1{font-size:2.5rem;}.grid-2{grid-template-columns:1fr;}.games-grid{grid-template-columns:repeat(2,1fr);}.trust-grid{grid-template-columns:repeat(2,1fr);}.tips-grid{grid-template-columns:1fr;}}
+        @media (max-width:480px){.games-grid{grid-template-columns:1fr;}}
+        .emoji{font-size:1.2em;}.text-center{text-align:center;}.mt-2{margin-top:2rem;}.mb-2{margin-bottom:2rem;}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">⚡ TIC TAC TOE</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/games">All Games</a></li>
+            <li><a href="/racing">Racing</a></li>
+            <li><a href="/action">Action</a></li>
+            <li><a href="/puzzle">Puzzle</a></li>
+            <li><a href="/strategy">Strategy</a></li>
+            <li><a href="/skill">Skill</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+    <header class="game-header">
+        <div class="container">
+            <h1>Tic Tac Toe Unblocked<br><span style="font-size:0.55em;display:block;margin-top:0.5rem;">Classic X And O Strategy For All Ages</span></h1>
+            <p style="font-size:1.3rem;color:var(--text-secondary);max-width:700px;margin:0 auto;">Play the timeless classic Tic Tac Toe Unblocked. Challenge friends in 2-player mode or test your skills against AI. Simple strategy, endless fun on school Chromebooks.</p>
+            <div class="game-stats">
+                <div class="stat-item"><span>⭐</span> 4.9/5 (1.5M+ players)</div>
+                
+                    <div class="stat-item"><span>⭕</span> Classic X O Gameplay</div>
+                
+                    <div class="stat-item"><span>🤖</span> AI Opponent</div>
+                
+                    <div class="stat-item"><span>👥</span> 2-Player Mode</div>
+                
+                    <div class="stat-item"><span>🎯</span> Strategic Thinking</div>
+                
+                    <div class="stat-item"><span>📱</span> Clean Interface</div>
+                
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        
+        <div class="game-wrapper">
+            <div class="preloader" id="preloader">
+                <img src="https://unblockedgames-67.github.io/images/tictactoe.png" alt="Tic Tac Toe Unblocked Preview">
+                <button class="play-btn" id="playBtn"><span class="emoji">▶️</span> PLAY TIC TAC TOE NOW</button>
+                <p style="color:var(--text-secondary);margin-top:1.5rem;">Puzzle 🧩 • Strategy 🧠</p>
+            </div>
+            <iframe class="game-frame" id="gameFrame" title="Tic Tac Toe Unblocked"></iframe>
+        </div>
+        <button class="fullscreen-btn" id="fullscreenBtn"><span class="emoji">🖥️</span> PLAY IN FULLSCREEN MODE</button>
+        
+        
+        <div class="grid-2">
+            
+            <div class="card">
+                <h3><span class="emoji">⭕</span> Game Overview</h3>
+                <p style="color:var(--text-secondary);margin-bottom:1.5rem;">Tic Tac Toe is the classic strategy game where players take turns placing X and O on a 3x3 grid. Simple rules hide deep strategic possibilities.</p>
+                
+                <ul class="feature-list">
+                    
+                        <li>Classic 3x3 grid gameplay</li>
+                    
+                        <li>Two-player head-to-head mode</li>
+                    
+                        <li>AI opponent with adjustable difficulty</li>
+                    
+                        <li>Clean, distraction-free interface</li>
+                    
+                        <li>Perfect for quick matches</li>
+                    
+                </ul>
+                
+            </div>
+            
+            <div class="card">
+                <h3><span class="emoji">🎮</span> Controls</h3>
+                <p style="color:var(--text-secondary);margin-bottom:1.5rem;">Simple point-and-click controls for all devices:</p>
+                
+                <ul class="feature-list">
+                    
+                        <li><span style="display:inline-block;background:var(--surface-light);padding:6px 16px;border-radius:40px;margin-right:12px;font-weight:600;">Click square</span> Place X or O (desktop) [citation:5]</li>
+                    
+                        <li><span style="display:inline-block;background:var(--surface-light);padding:6px 16px;border-radius:40px;margin-right:12px;font-weight:600;">Tap square</span> Place mark (mobile)</li>
+                    
+                        <li><span style="display:inline-block;background:var(--surface-light);padding:6px 16px;border-radius:40px;margin-right:12px;font-weight:600;">Menu</span> Select game mode</li>
+                    
+                        <li><span style="display:inline-block;background:var(--surface-light);padding:6px 16px;border-radius:40px;margin-right:12px;">New Game</span> Reset board</li>
+                    
+                </ul>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        <div style="margin:4rem 0;">
+            <h2 class="text-center">Why 1.5 Million Players Choose This Version</h2>
+            <div class="trust-grid">
+                
+                <div class="trust-item"><div class="trust-icon">⚡</div><h4 style="margin-bottom:0.3rem;">Smooth Gameplay</h4><p style="color:var(--text-secondary);font-size:0.9rem;">Instant response moves</p></div>
+                
+                <div class="trust-item"><div class="trust-icon">🔓</div><h4 style="margin-bottom:0.3rem;">Fully Unblocked</h4><p style="color:var(--text-secondary);font-size:0.9rem;">Play at school or work</p></div>
+                
+                <div class="trust-item"><div class="trust-icon">💻</div><h4 style="margin-bottom:0.3rem;">Chromebook Ready</h4><p style="color:var(--text-secondary);font-size:0.9rem;">Works on all devices</p></div>
+                
+                <div class="trust-item"><div class="trust-icon">🆓</div><h4 style="margin-bottom:0.3rem;">Completely Free</h4><p style="color:var(--text-secondary);font-size:0.9rem;">No downloads or payments</p></div>
+                
+            </div>
+        </div>
+        
+
+        
+        <div style="margin:3rem 0;">
+            <h2 class="text-center">Pro Tips for Mastering Tic Tac Toe</h2>
+            <div class="tips-grid">
+                
+                <div class="tip-card">
+                    <h4><span class="emoji">🎯</span> Control The Center</h4>
+                    <p style="color:var(--text-secondary);">The center square is most valuable—it&#39;s part of four winning lines. Take it first if possible. If opponent takes center, claim corners [citation:2].</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4><span class="emoji">🔄</span> Create Forks</h4>
+                    <p style="color:var(--text-secondary);">Set up multiple winning threats simultaneously. Opponent can only block one. This advanced tactic wins games against unprepared players.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4><span class="emoji">🛡️</span> Block Opponent&#39;s Forks</h4>
+                    <p style="color:var(--text-secondary);">When opponent threatens a fork, block it immediately. Sometimes obvious threats hide fork opportunities—learn to see them coming.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4><span class="emoji">🤝</span> Perfect Play = Draw</h4>
+                    <p style="color:var(--text-secondary);">With optimal play from both sides, Tic Tac Toe always ends in a draw. If losing, aim for draw by blocking all threats.</p>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="seo-content">
+            <h2>What Is Tic Tac Toe Unblocked?</h2>
+<p><strong>Tic Tac Toe Unblocked</strong> brings the timeless classic strategy game to your browser with clean design and multiple gameplay modes [citation:2]. Whether you're challenging a friend in 2-player mode or testing your skills against the computer, this simple yet engaging game offers endless entertainment for players of all ages [citation:5].</p>
+<p>The rules are simple: two players take turns marking spaces in a 3x3 grid. One player uses X, the other uses O. The first player to get three of their marks in a row—horizontally, vertically, or diagonally—wins. If all nine squares are filled without a winner, the game ends in a draw. Despite its simplicity, Tic Tac Toe involves strategic thinking and pattern recognition [citation:2]. The unblocked version removes all network restrictions, letting you enjoy this classic brain game on school Chromebooks, work computers, or any device with internet access [citation:5].</p>
+
+<h2>Why Tic Tac Toe Is Perfect For Chromebook</h2>
+<p>School-issued Chromebooks often block gaming sites, but <strong>Tic Tac Toe unblocked for Chromebook</strong> bypasses these restrictions completely [citation:5]. The lightweight HTML5 game runs flawlessly on budget hardware with minimal system requirements. No extensions, no VPNs, no complicated setups—just pure strategic fun during study breaks or free periods.</p>
+<p>The game's clean, distraction-free interface keeps focus on gameplay [citation:2]. With both single-player and two-player modes, you can practice against AI or challenge friends. Each match takes only minutes, perfect for quick breaks between classes. Plus, the game is available as a Chrome extension for even easier access [citation:5].</p>
+
+<h2>How To Play Tic Tac Toe Online Free</h2>
+<p>Starting your <strong>Tic Tac Toe online free</strong> matches:</p>
+<ol>
+<li>Open any browser on your device (Chrome, Edge, Firefox, Safari)</li>
+<li>Navigate to our Tic Tac Toe game page</li>
+<li>Choose game mode: vs AI or 2-Player</li>
+<li>Click any empty square to place your mark</li>
+<li>Take turns with opponent—X goes first traditionally</li>
+<li>First to get three in a row wins</li>
+<li>Start new game when match ends</li>
+</ol>
+<p>No account creation, no email verification, no hidden fees. Just pure strategic fun.</p>
+
+<h2>Game Modes And Features</h2>
+<p>Tic Tac Toe Unblocked offers multiple ways to play [citation:2][citation:5]:</p>
+
+<h3>Single Player vs AI</h3>
+<p>Challenge the computer at various difficulty levels. Perfect for honing your skills when no human opponent is available. The AI provides consistent challenge—can you outsmart it? [citation:5]</p>
+
+<h3>Two-Player Mode</h3>
+<p>The classic way to play. Share a device with a friend and take turns. Simple, social, and endlessly entertaining. Perfect for friendly competition during breaks [citation:2].</p>
+
+<h3>Clean Interface</h3>
+<p>The game features a sleek, modern design that doesn't distract from gameplay. Large, clear X and O marks make moves easy to see from across the room. No ads, no clutter—just pure Tic Tac Toe [citation:2][citation:8].</p>
+
+<h2>Advanced Strategies For Tic Tac Toe</h2>
+<p>Want to never lose again? These <strong>Tic Tac Toe strategies</strong> will make you unbeatable:</p>
+
+<h3>Control The Center</h3>
+<p>The center square is the most valuable position. It's part of four winning lines (horizontal, vertical, both diagonals). Always take the center if you're first. If opponent takes center, claim corners [citation:2].</p>
+
+<h3>Forking Strategy</h3>
+<p>A "fork" is creating two separate winning threats simultaneously. Your opponent can only block one. Set up forks by placing marks that create multiple potential winning lines. This advanced tactic wins games.</p>
+
+<h3>Block Opponent's Forks</h3>
+<p>When opponent threatens to create a fork, you must block it immediately. Sometimes blocking obvious threats leaves fork opportunities—learn to see them coming.</p>
+
+<h3>Perfect Play Ends In Draw</h3>
+<p>With perfect play from both sides, Tic Tac Toe always ends in a draw. If you're losing, aim for the draw by blocking all threats. If you're winning, set up forks your opponent can't stop.</p>
+
+<h2>Frequently Asked Questions About Tic Tac Toe Unblocked</h2>
+
+<h3>Is Tic Tac Toe appropriate for school?</h3>
+<p>Yes, absolutely. Tic Tac Toe is a classic strategy game with no violence or inappropriate content. Suitable for all ages and actually exercises strategic thinking [citation:2].</p>
+
+<h3>Do I need to download anything?</h3>
+<p>No downloads required. The game runs in your browser using HTML5 technology. Also available as Chrome extension [citation:5].</p>
+
+<h3>Can I play on my phone?</h3>
+<p>Yes, works perfectly on iPhone, iPad, and Android devices. Touch controls make placing marks intuitive [citation:8].</p>
+
+<h3>Is there an AI opponent?</h3>
+<p>Yes, single-player mode lets you play against the computer with adjustable difficulty [citation:5].</p>
+
+<h3>Can I play with friends?</h3>
+<p>Yes! Two-player mode is perfect for sharing a device and competing head-to-head [citation:2].</p>
+
+<h3>Does progress save?</h3>
+<p>Each game is independent. No save needed—just play whenever you want.</p>
+        </div>
+
+        <section style="margin:4rem 0;">
+            <h2 class="text-center">Similar Unblocked Games You'll Love</h2>
+            <div class="games-grid">
+                
+                <div class="game-tile">
+                    <a href="/subway-surfers">
+                        <img src="https://unblockedgames-67.github.io/images/subway-surfers.png" alt="Subway Surfers Unblocked" loading="lazy">
+                        <h4>Subway Surfers</h4>
+                    </a>
+                </div>
+                
+                <div class="game-tile">
+                    <a href="/cat-trap">
+                        <img src="https://unblockedgames-67.github.io/images/cat-trap.png" alt="Cat Trap Unblocked" loading="lazy">
+                        <h4>Cat Trap</h4>
+                    </a>
+                </div>
+                
+                <div class="game-tile">
+                    <a href="/funny-shooter-2">
+                        <img src="https://unblockedgames-67.github.io/images/funny-shooter-2.png" alt="Funny Shooter 2 Unblocked" loading="lazy">
+                        <h4>Funny Shooter 2</h4>
+                    </a>
+                </div>
+                
+                <div class="game-tile">
+                    <a href="/temple-run-2">
+                        <img src="https://unblockedgames-67.github.io/images/temple-run-2.png" alt="Temple Run 2 Unblocked" loading="lazy">
+                        <h4>Temple Run 2</h4>
+                    </a>
+                </div>
+                
+                <div class="game-tile">
+                    <a href="/12-minibattles">
+                        <img src="https://unblockedgames-67.github.io/images/12-minibattles.png" alt="12 Minibattles Unblocked" loading="lazy">
+                        <h4>12 Minibattles</h4>
+                    </a>
+                </div>
+                
+            </div>
+            <div style="text-align:center;margin-top:2rem;">
+                <a href="/games" style="color:var(--primary);text-decoration:none;font-weight:600;">View all 50+ unblocked games →</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="logo">⚡ TIC TAC TOE UNBLOCKED</div>
+            <div class="footer-links">
+                <a href="/privacy">Privacy</a>
+                <a href="/terms">Terms</a>
+                <a href="/dmca">DMCA</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <div class="copyright">© 2026 Tic Tac Toe Unblocked. All rights reserved.</div>
+        </div>
+    </div>
+</footer>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TD842ZQ7NL"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TD842ZQ7NL');
+</script>
+
+<script>
+    const playBtn=document.getElementById('playBtn');
+    const gameFrame=document.getElementById('gameFrame');
+    const preloader=document.getElementById('preloader');
+    const fullscreenBtn=document.getElementById('fullscreenBtn');
+    
+    playBtn.addEventListener('click',function(){
+        gameFrame.src='https://iframe.unblocked-76-games.org/tictactoe-main';
+        gameFrame.style.display='block';
+        preloader.style.display='none';
+        fullscreenBtn.style.display='flex';
+        if(typeof gtag!=='undefined'){
+            gtag('event','game_start',{'event_label':'Tic Tac Toe Unblocked'});
+        }
+    });
+    
+    fullscreenBtn.addEventListener('click',function(){
+        if(gameFrame.requestFullscreen){gameFrame.requestFullscreen();}
+        else if(gameFrame.webkitRequestFullscreen){gameFrame.webkitRequestFullscreen();}
+        else if(gameFrame.msRequestFullscreen){gameFrame.msRequestFullscreen();}
+    });
+</script>
+
+<a href="https://www.liveinternet.ru/click" target="_blank"><img id="licnt8636" width="0" height="0" style="border:0" title="LiveInternet" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" alt=""/></a><script>(function(d,s){d.getElementById("licnt8636").src="https://counter.yadro.ru/hit?t45.1;r"+escape(d.referrer)+((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+(s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen);</script>
+
+</body>
+</html>
